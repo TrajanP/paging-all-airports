@@ -1,5 +1,5 @@
 # Paging All Airports - Find it [Here]().
-![Welcome to Paging All Airports(public/media/assets/PAAThumbnail.png?raw=true "Paging All Airports Thumbnail")
+![Welcome to Paging All Airports](public/media/assets/PAAThumbnail.png?raw=true "Paging All Airports Thumbnail")
 - - - 
 - - - 
 ### Combining my love for Travel and Code, Paging All Airports is a single page web app displaying valuable information for your chosen airport.
