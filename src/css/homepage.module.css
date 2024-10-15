@@ -1,0 +1,193 @@
+/* Search Bar for Airports Styling */
+.searchBody {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    margin-top: auto;
+    top: 50%;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.searchContainer {
+    display: flex;
+    border-top-left-radius : 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #F7D83F;
+    color: black;
+    padding: 15px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.searchInput {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.submitButton {
+    width: 5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* HomePage Styling */
+.homeBody {
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #0c0e1c;
+    overflow-y: auto;
+}
+
+.homeBodyExtended {
+    height: 200vh;
+    overflow: hidden;
+    background-color: #0c0e1c;
+}
+
+/* Horizontally Moving Text Styling */
+.bannerBox {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.backgroundVideo {
+    height: 100%;
+    overflow: hidden;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    position: absolute;
+    top: 0;
+}
+
+/* -----------------For Regular Screens Smaller than 1900px---------------------- */
+@media screen and (max-width: 1900px) {
+    /* Search Bar for Airports Styling */
+    .searchBody {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        top: 50%;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    .searchContainer {
+        display: flex;
+        border-top-left-radius : 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #F7D83F;
+        color: black;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .searchInput {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+    .submitButton {
+        width: 5rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    /* HomePage Styling */
+    .homeBody {
+        max-height: 100vh;
+        min-height: 100vh;
+        overflow: hidden;
+        background-color: #0c0e1c;
+    }
+
+    .homeBodyExtended {
+        height: 500vh;
+        overflow: hidden;
+        background-color: #0923e4;
+    }
+
+    .backgroundVideo {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+    }
+}
+
+/* -----------------For Mobile Screens Smaller than 930px---------------------- */
+@media screen and (max-width: 930px) {
+    /* Search Bar for Airports Styling */
+    .searchBody {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        top: 50%;
+        overflow: hidden;
+        z-index: 5;
+        width: 20rem;
+    }
+
+    .searchContainer {
+        display: flex;
+        border-top-left-radius : 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #F7D83F;
+        color: black;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .searchInput {
+        font-size: 1rem;
+        padding: .5rem;
+        max-width: 8rem;
+    }
+
+    .submitButton {
+        width: 5rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    /* HomePage Styling */
+    .homeBody {
+        max-height: 100vh;
+        min-height: 100vh;
+        overflow: hidden;
+        background-color: #0c0e1c;
+    }
+
+    .homeBodyExtended {
+        height: 215vh;
+        overflow: hidden;
+        background-color: #0c0e1c;
+    }
+
+    .backgroundVideo {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+    }
+}

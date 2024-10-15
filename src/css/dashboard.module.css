@@ -1,0 +1,128 @@
+/* -----------------For Largest Screens Past 1900px---------------------- */
+.componentContainer {
+    margin-top: 100vh;
+    background-color: #0c0e1c;
+    width: 100vw;
+    min-height: 115vh;
+    position: relative;
+}
+
+/* Dashboard is split into 4 quarters */
+
+/* Upper half of dashboard */
+.upperContainer {
+    display: flex;
+    height: 50%;
+}
+
+.airportInfoTile {
+    width: 50%;
+}
+
+.weatherInfoTile {
+    width: 50%;
+}
+
+/* Lower half of container */
+.lowerContainer {
+    display: flex;
+    height: 50%;
+}
+
+.departuresTile {
+    width: 50%;
+}
+
+.arrivalsTile {
+    width: 50%;
+}
+
+/* -----------------For Regular Screens Smaller than 1900px---------------------- */
+@media screen and (max-width: 1900px){
+    .componentContainer {
+        margin-top: 100vh;
+        background-color: #0c0e1c;
+        width: 100vw;
+        height: 100%;
+        overflow: auto;
+        padding-top: 15vh;
+    }
+
+    .upperContainer {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .airportInfoTile {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+    
+    .weatherInfoTile {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+    .lowerContainer {
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+    
+    .departuresTile {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+    
+    .arrivalsTile {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+}
+
+
+
+/* -----------------For Mobile Screens Smaller than 930px---------------------- */
+@media screen and (max-width: 930px){
+    .componentContainer {
+        margin-top: 100vh;
+        background-color: #0c0e1c;
+        width: 100vw;
+        height: 115vh;
+        overflow: scroll;
+        padding-top: 5vh;
+    }
+
+    .upperContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .airportInfoTile {
+        min-width: 100%;
+        min-height: 50%;
+    }
+    
+    .weatherInfoTile {
+        min-width: 100%;
+        min-height: 50%;
+    }
+
+    .lowerContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .departuresTile {
+        min-width: 100%;
+        min-height: 50%;
+    }
+    
+    .arrivalsTile {
+        min-width: 100%;
+        min-height: 50%;
+    }
+}

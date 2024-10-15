@@ -1,0 +1,193 @@
+/* -----------------For Largest Screens Past 1900px---------------------- */
+.componentContainer {
+    background-color: #191e3b;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: 580px;
+    max-height: 580px;
+    overflow: auto;
+    margin-inline: 5rem;
+    margin-block: 2.5rem;
+    position: relative;
+}
+
+.scheduleHeaderContainer {
+    background-color: #191e3b;
+    position: sticky;
+    top: 0;
+    padding-top: 2rem;
+}
+
+.header {
+    font-size: 4rem;
+    padding-top: 2rem;
+    margin-left: 5rem;
+    display: flex;
+}
+
+.header div {
+    min-width: 88%;
+}
+
+.planeIcon {
+    width: 5rem;
+    margin-right: 5rem;
+    margin-top: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.infoIcon {
+    position: absolute;
+    top: 0;
+    scale: 2.5;
+    z-index: 10;
+    margin: 3rem;
+    cursor: pointer;
+}
+
+.infoIcon:hover {
+    color: #D6D045;
+    transition: .5s;
+}
+
+.subHeader {
+    display: flex;
+    font-size: 1.3rem;
+    margin-inline: 5rem;
+    color: #D6D045;
+    justify-content: space-between;
+}
+
+.colHeader {
+    max-width: 18%;
+    min-width: 18%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.colHeaderLong {
+    max-width: 25%;
+    min-width: 25%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.errorAlert {
+    background-color: #6B6969;
+    width: 20rem;
+    border-radius: 20px;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* -----------------For Regular Screens Smaller than 1900px---------------------- */
+@media screen and (max-width: 1900px){
+    .componentContainer {
+        background-color: #191e3b;
+        border-radius: 20px;
+        margin-inline: 5.0rem;
+        margin-block: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        height: 80%;
+        max-height: 80%;
+    }
+
+    .subHeader {
+        display: flex;
+        font-size: 1.3rem;
+        margin-inline: 5rem;
+        color: #D6D045;
+        gap: 2%;
+        margin-inline: 5rem;
+    }
+    
+}
+
+/* -----------------For Mobile Screens Smaller than 930px---------------------- */
+@media screen and (max-width: 930px){
+    .componentContainer {
+        background-color: #191e3b;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        height: 290px;
+        max-height: 290px;
+        overflow: auto;
+        margin-inline: 2.0rem;
+        margin-block: 1.25rem;
+    }
+    
+    .scheduleHeaderContainer {
+        background-color: #191e3b;
+        position: sticky;
+        top: 0;
+        padding-top: 1rem;
+    }
+    
+    .header {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        margin-left: 2.0rem;
+    }
+    
+    .header div {
+        min-width: 88%;
+    }
+    
+    .planeIcon {
+        width: 2.0rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .infoIcon {
+        position: absolute;
+        top: 0;
+        scale: 1.5;
+        z-index: 10;
+        margin: 1rem;
+        cursor: pointer;
+    }
+    
+    .subHeader {
+        display: flex;
+        font-size: .6rem;
+        margin-inline: .5rem;
+        color: #D6D045;
+        margin-top: .3rem;
+        justify-content: space-between;
+    }
+    
+    .colHeader {
+        max-width: 17%;
+        min-width: 17%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .colHeaderLong {
+        max-width: 25%;
+        min-width: 25%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .errorAlert {
+        background-color: #6B6969;
+        width: 10rem;
+        border-radius: 20px;
+        padding: .75rem;
+        font-size: 1rem;
+        margin: auto;
+        margin-top: 2.5rem;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+}

@@ -1,0 +1,135 @@
+/* -----------------For Largest Screens Past 1900px---------------------- */
+.componentContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--status-color);
+    margin-inline: 5rem;
+    margin-block: .5rem;
+    font-size: 1rem;
+    padding: .25rem;
+    align-items: baseline;
+}
+
+.dropDownRowContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--status-color);
+    margin-inline: 5rem;
+    margin-right: 15rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    padding: .25rem;
+    padding-inline: 2rem;
+}
+
+/* Row's Column CSS */
+.span {
+    max-width: 18%;
+    min-width: 18%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.spanStatus {
+    background-color: #191e3b;
+    border-radius: 5px;
+    padding: .4rem;
+    max-width: 18%;
+}
+
+.spanBorder {
+    background-color: #191e3b;
+    border-radius: 5px;
+    padding: .4rem;
+}
+
+.spanLong {
+    max-width: 25%;
+    min-width: 25%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.spanShort {
+    max-width: 5%;
+    min-width: 5%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: #D6D045;
+    transition: .5s;
+}
+
+/* -----------------For Mobile Screens Smaller than 930px---------------------- */
+@media screen and (max-width: 930px) {
+    .componentContainer {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--status-color);
+        margin-inline: .5rem;
+        margin-block: .25rem;
+        font-size: .5rem;
+        padding: .12rem;
+        gap: .1rem;
+    }
+    
+    .dropDownRowContainer {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--status-color);
+        margin-right: 7.5rem;
+        margin-bottom: .25rem;
+        font-size: .5rem;
+        padding: .12rem;
+        margin-left: .5rem;
+        min-width: 80%;
+    }
+    
+    /* Row's Column CSS */
+    .span {
+        max-width: 17%;
+        min-width: 17%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .spanLong {
+        max-width: 25%;
+        min-width: 25%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .spanShort {
+        max-width: 5%;
+        min-width: 5%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .arrow {
+        cursor: pointer;
+    }
+    
+    .arrow:hover {
+        color: #D6D045;
+    }
+
+    .spanStatus {
+        background-color: #191e3b;
+        border-radius: 4px;
+        padding: .2rem;
+    }
+    
+    .spanBorder {
+        background-color: #191e3b;
+        border-radius: 4px;
+        padding: .2rem;
+    }
+}

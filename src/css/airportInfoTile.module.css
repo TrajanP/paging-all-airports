@@ -1,0 +1,197 @@
+/* -----------------For Largest Screens Past 1900px---------------------- */
+/* Parent Container CSS which acts as body for changing info */
+.componentContainer {
+    background-color: #191e3b;
+    border-radius: 20px;
+    margin-inline: 5rem;
+    margin-block: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height: 580px;
+    max-height: 580px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footerNav {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.radialSet {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.radialDot {
+    border-radius: 50px;
+    background-color: var(--status-color);
+    width: 2rem;
+    height: 2rem;
+}
+
+.arrowSet {
+    scale: 5;
+    cursor: pointer;
+}
+
+.arrowSet:hover {
+    color: #D6D045;
+}
+
+/* CSS for Tile 1 of Airport Info */
+.tile1Container {
+    display: flex;
+    height: 100%;
+}
+
+.leftCol {
+    font-size: 5rem;
+    padding-top: 2rem;
+    margin-left: 5rem;
+    width: 30%;
+    position: relative;
+    z-index: 5;
+}
+
+.airportIcon1 {
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+    z-index: 0;
+}
+
+/* CSS for Tile 2 of Airport Info */
+.headerContainer {
+    font-size: 5rem;
+    padding-top: 2rem;
+    margin-left: 5rem;
+    width: 30%;
+}
+
+.listContainer {
+    font-size: 2rem;
+    margin-left: 5rem;
+    max-width: 40%;
+}
+
+.airportIcon2 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.link:hover {
+    color: #F7D83F;
+}
+
+/* -----------------For Regular Screens Smaller than 1900px---------------------- */
+@media screen and (max-width: 1900px) {
+    .componentContainer {
+        background-color: #191e3b;
+        border-radius: 20px;
+        margin-inline: 5.0rem;
+        margin-block: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        height: 80%;
+        max-height: 80%;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* -----------------For Mobile Screens Smaller than 930px---------------------- */
+@media screen and (max-width: 930px) {
+    .componentContainer {
+        background-color: #191e3b;
+        border-radius: 20px;
+        margin-inline: 2.0rem;
+        margin-block: 1.25rem;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        height: 290px;
+        max-height: 290px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .footerNav {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        bottom: 0;
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+    .radialSet {
+        display: flex;
+        gap: .5rem;
+        margin: 1rem;
+    }
+    
+    .radialDot {
+        border-radius: 50px;
+        background-color: var(--status-color);
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .arrowSet {
+        scale: 2.5;
+        cursor: pointer;
+    }
+    
+    .arrowSet:hover {
+        color: #D6D045;
+    }
+    
+    /* CSS for Tile 1 of Airport Info */
+    .tile1Container {
+        display: flex;
+        height: 100%;
+    }
+    
+    .leftCol {
+        font-size:  1.8rem;
+        padding-top: 1rem;
+        margin-left: 2.5rem;
+        width: 30%;
+        position: relative;
+        z-index: 5;
+    }
+    
+    .airportIcon1 {
+        width: 50%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1rem;
+        z-index: 0;
+    }
+    
+    /* CSS for Tile 2 of Airport Info */
+    .headerContainer {
+        font-size: 2.0rem;
+        padding-top: 1rem;
+        margin-left: 2.5rem;
+        width: 30%;
+    }
+    
+    .listContainer {
+        font-size: 1rem;
+        margin-left: 2.5rem;
+        max-width: 100%;
+    }
+    
+    .airportIcon2 {
+        display: none;
+    }
+}
