@@ -1,4 +1,6 @@
 # Paging All Airports - Find it [Here]().
+![Welcome to Paging All Airports(/src/media/assets/PAAThumbnail.png?raw=true "Paging All Airports Thumbnail")
+- - - 
 - - - 
 ### Combining my love for Travel and Code, Paging All Airports is a single page web app displaying valuable information for your chosen airport.
 
@@ -17,3 +19,12 @@
 
 ### Node JS -v 16.13.2
 > Node JS is a runtime environment that allows developers to run JavaScript code on the server side, outside of a web browser. Furthermore node allows the use of NPM and the Express framework with our project.
+
+### Next JS v14.2.7
+>
+
+## Bootstrap v5.5.5
+>
+
+## Vercel
+> 
