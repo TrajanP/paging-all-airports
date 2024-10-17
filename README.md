@@ -17,14 +17,11 @@
 ### React -v 18.2.0
 > React is a Front End library which allows the developer to code and reuse components to build our UI. It efficiently renders using the Virtual DOM and compares state changes with the DOM. The library provides developer benefits such as State Management, Component Lifecycle Methods and React Hooks. 
 
-### Node JS -v 16.13.2
-> Node JS is a runtime environment that allows developers to run JavaScript code on the server side, outside of a web browser. Furthermore node allows the use of NPM and the Express framework with our project.
-
 ### Next JS v14.2.7
->
+> Next JS is a React fullstack framework which enables server-side rendering (SSR), provides built in API and page routing and optimizing web applications for speed and performance.
 
 ## Bootstrap v5.5.5
->
+> Bootstrap is a popular front-end framework that provides pre-designed components and a responsive grid system to build visually appealing web applications quickly.
 
 ## Vercel
-> 
+> Vercel is a cloud platform that helps developers build, deploy, and scale web applications.
