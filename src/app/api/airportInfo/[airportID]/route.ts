@@ -4,9 +4,11 @@ export const GET = async (request: NextRequest, context: any) => {
   try {
       //We need to fetch the airport information from the public API
       const { params } = context;
+
+      const key = process.env.API_KEY;
       const airportInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}`, {
         headers: {
-          "x-apikey": {process.env.API_KEY}
+          "x-apikey": {key}
         }
       });
       //Await response and parse it as JSON
