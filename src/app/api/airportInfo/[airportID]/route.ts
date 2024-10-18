@@ -6,7 +6,7 @@ export const GET = async (request: NextRequest, context: any) => {
       const { params } = context;
       const airportInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}`, {
         headers: {
-          "x-apikey": "key"
+          "x-apikey": process.env.API_KEY
         }
       });
       //Await response and parse it as JSON
