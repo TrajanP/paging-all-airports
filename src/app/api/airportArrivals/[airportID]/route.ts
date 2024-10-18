@@ -24,11 +24,10 @@ export const GET = async (request: NextRequest, context: any) => {
         currTime.setMilliseconds(0);
         const isoTimeCurr = currTime.toISOString().split('.')[0] + 'Z';
 
-        const key = process.env.API_KEY;
         // Get Past Arrivals from Airport
         const pastArrivalInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}/flights/arrivals?start=${isoTimeStart}&end=${isoTimeCurr}&max_pages=1`, {
             headers: {
-                "x-apikey": {key} 
+                "x-apikey": process.env.API_KEY 
             }
         });
 
@@ -39,7 +38,7 @@ export const GET = async (request: NextRequest, context: any) => {
         // Get Future Arrivals from Airport
         const scheduledArrivalInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}/flights/scheduled_arrivals?start=${isoTimeCurr}&end=${isoTimeEnd}&max_pages=1`, {
             headers: {
-                "x-apikey": {key}
+                "x-apikey": process.env.API_KEY
             }
         });
 

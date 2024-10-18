@@ -7,6 +7,6 @@ module.exports = {
       ignoreBuildErrors: true,
     },
     env: {
-        API_KEY: "inosO2LODXzXaeOLtoBrUPAtGA6vGQPX"
+        API_KEY: process.env.API_KEY
     }
   }
