@@ -8,7 +8,7 @@ export const GET = async (request: NextRequest, context: any) => {
       const key = "inosO2LODXzXaeOLtoBrUPAtGA6vGQPX";
       const airportInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}`, {
         headers: {
-          "x-apikey": {key}
+          "x-apikey": key
         }
       });
       //Await response and parse it as JSON
