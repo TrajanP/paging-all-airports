@@ -6,4 +6,7 @@ module.exports = {
       // !! WARN !!
       ignoreBuildErrors: true,
     },
+    env: {
+        API_KEY: "inosO2LODXzXaeOLtoBrUPAtGA6vGQPX"
+    }
   }
