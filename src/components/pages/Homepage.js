@@ -195,7 +195,7 @@ const Homepage = () => {
         <div className={extended ? css.homeBodyExtended : css.homeBody}>
             <NavBar/>
             <SearchBar setExtended={setExtended} setAirportInfo={setAirportInfo}/>
-            <video autoPlay="autoPlay" loop="loop" muted id="timelapseID" className={css.backgroundVideo} >
+            <video autoPlay="autoPlay" playsinline loop="loop" muted id="timelapseID" className={css.backgroundVideo} >
                 <source src="/media/videos/timelapse.mp4" type="video/mp4"/>
             </video>
             <div className={css.bannerBox}>
