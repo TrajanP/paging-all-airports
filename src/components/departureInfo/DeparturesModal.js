@@ -35,7 +35,7 @@ const DeparturesModal = ({setShow}) => {
                 <li><span style={{backgroundColor:"#D46C5D", borderRadius:"4px", padding:".2rem"}}> CANCELLED</span> - A flight is Cancelled if it has been marked cancelled.</li>
                 <li><span style={{backgroundColor:"#B26B2A", borderRadius:"4px", padding:".2rem"}}> DIVERTED</span> - A flight is Diverted if it has been marked diverted.</li>
                 
-                <li> You can click each flight's dropdown to get a more detailed status message.</li>
+                <li> You can click each flight&apos;s dropdown to get a more detailed status message.</li>
             </ul>
              Departure Time 
             <ul>

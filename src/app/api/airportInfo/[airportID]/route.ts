@@ -1,12 +1,12 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 // API Route for Fetching Airport Info from AeroAPI
-export const GET = async (request: Request, context: any) => {
+export const GET = async (request: NextRequest, context: any) => {
   try {
       //We need to fetch the airport information from the public API
       const { params } = context;
       const airportInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}`, {
         headers: {
-          "x-apikey": process.env.API_KEY,
+          "x-apikey": "key"
         }
       });
       //Await response and parse it as JSON

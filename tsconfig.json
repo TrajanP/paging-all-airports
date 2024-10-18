@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/api/airportInfo/[airportID]/route.ts", "src/app/context/MyContext.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/api/airportInfo/[airportID]/route.ts", "src/app/context/MyContext.js", "src/app/api/airportDepartures/[airportID]/route.js"],
   "exclude": ["node_modules"]
 }

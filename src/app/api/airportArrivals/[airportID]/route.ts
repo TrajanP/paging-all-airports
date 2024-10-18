@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 // API Route for Fetching Airport Arrivals from AeroAPI
 // Both Past and Future Arrivals
-export const GET = async (request: 'Request', context: any) => {
+export const GET = async (request: NextRequest, context: any) => {
     try {
         const { params } = context;
 
@@ -23,11 +23,10 @@ export const GET = async (request: 'Request', context: any) => {
         currTime.setHours(currTime.getHours());
         currTime.setMilliseconds(0);
         const isoTimeCurr = currTime.toISOString().split('.')[0] + 'Z';
-
         // Get Past Arrivals from Airport
         const pastArrivalInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}/flights/arrivals?start=${isoTimeStart}&end=${isoTimeCurr}&max_pages=1`, {
             headers: {
-                "x-apikey": process.env.API_KEY,
+                "x-apikey": "key" 
             }
         });
 
@@ -38,7 +37,7 @@ export const GET = async (request: 'Request', context: any) => {
         // Get Future Arrivals from Airport
         const scheduledArrivalInfo = await fetch(`https://aeroapi.flightaware.com/aeroapi/airports/${params.airportID}/flights/scheduled_arrivals?start=${isoTimeCurr}&end=${isoTimeEnd}&max_pages=1`, {
             headers: {
-                "x-apikey": process.env.API_KEY,
+                "x-apikey": "key"
             }
         });
 
