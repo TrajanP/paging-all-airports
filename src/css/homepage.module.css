@@ -66,6 +66,15 @@
     top: 0;
 }
 
+.backgroundImage {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    display: none;
+}
+
 /* -----------------For Regular Screens Smaller than 1900px---------------------- */
 @media screen and (max-width: 1900px) {
     /* Search Bar for Airports Styling */
@@ -189,5 +198,15 @@
         position: absolute;
         object-fit: cover;
         top: 0;
+        display: none;
+    }
+
+    .backgroundImage {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        display: inline;
     }
 }

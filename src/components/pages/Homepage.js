@@ -195,9 +195,10 @@ const Homepage = () => {
         <div className={extended ? css.homeBodyExtended : css.homeBody}>
             <NavBar/>
             <SearchBar setExtended={setExtended} setAirportInfo={setAirportInfo}/>
-            <video autoPlay="autoPlay" playsinline loop="loop" muted id="timelapseID" className={css.backgroundVideo} >
+            <video autoPlay="autoPlay" playsInline loop="loop" muted id="timelapseID" className={css.backgroundVideo} >
                 <source src="/media/videos/timelapse.mp4" type="video/mp4"/>
             </video>
+            <img className={css.backgroundImage} src="/media/assets/airportStatic.png" alt="An Airport"/>
             <div className={css.bannerBox}>
                 <TextScroll direction={'left'} text={text1}/>
                 <TextScroll direction={'right'} text={text2}/>
